@@ -1,0 +1,291 @@
+<!--[if !mso 9]>
+<!-->
+    <head>
+        <style type="text/css">
+        
+        
+        @media screen and (max-width:550px) {
+        
+        .fs10 { font-size: 10px!important;
+        line-height:14px!important;
+        }
+        
+        .fs12 { font-size: 12px!important;
+        line-height:16px!important;
+        }
+        .fs16 { font-size: 16px!important;
+        line-height:22px!important;
+        }
+        .full {
+        width: 100% !important;
+        max-width: none !important;
+        }
+        .aligncentermob {
+        text-align: center!important;
+        }
+        .pt10 {
+        padding-top:10px!important;
+        }
+        
+        .hide414 {
+        display: none !important;
+        }
+        
+        
+        
+        }
+        
+        
+        </style>
+        </head>
+        <!--<![endif]-->
+        
+        
+        
+        <table style="width:100%;" role="presentation" class="kl-section" cellspacing="0" cellpadding="0" border="0"
+        align="center">
+        <tbody>
+        <tr>
+        <td>
+        
+        <div style="margin:0px auto;max-width:650px;">
+        <table style="width:100%;" role="presentation" cellspacing="0" cellpadding="0" border="0"
+        align="center">
+        <tbody>
+        <tr>
+        <td height="30" class="hide414"
+        style="font-size:30px;line-height:30px;mso-line-height-rule:exactly;opacity:0;">
+        &nbsp;</td>
+        </tr>
+        
+        
+        
+        {% if event.Items|length > 4 %}
+        <tr>
+        <td style="vertical-align:top;padding-top:9px;padding-right:18px;padding-bottom:9px;padding-left:18px;" class="mob-no-spc">
+        <table width="100%" style="" role="presentation" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+        <tr>
+        <td style="font-size:0px;padding:0px;word-break:break-word;" class="kl-button" align="center">
+        <table style="border-collapse:separate;line-height:100%;" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+        <tr>
+        <td valign="middle" style="border:none;border-radius:5px;cursor:auto;font-style:normal;mso-padding-alt:16px 40px 16px 40px;background:#000000;" role="presentation" bgcolor="#000000" align="center">
+        <a href="https://www.oakandluna.com/ShoppingCart.aspx?ccmid=&amp;cartid=666852375fff44039cb2870bf8e0cbae&amp;utm_content=prodimg&amp;_kx=" style="color:#FFF; text-decoration:none; display:inline-block; background:#000; font-family:'gill-sans-nova', Helvetica, Arial, sans-serif; font-size:16px; font-style:normal; font-weight:500; line-height:100%; letter-spacing:2px; margin:0; text-transform:none; padding:16px 40px 16px 40px; mso-padding-alt:0; border-radius:5px" target="_blank" rel="noopener">
+        CONTINUE SHOPPING
+        </a>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </td>
+        </tr>
+        <tr>
+        <td height="20" class="hide414"
+        style="font-size:20px;line-height:20px;mso-line-height-rule:exactly;opacity:0;">
+        &nbsp;</td>
+        </tr>
+        {% endif %}
+        
+        
+        
+        
+        
+        
+        <tr>
+        <td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
+        
+        <div
+        style="background:#F8F8F8;background-color:#F8F8F8;margin:0px auto;max-width:600px;">
+        <table style="background:#F8F8F8;background-color:#F8F8F8;width:100%;"
+        role="presentation" cellspacing="0" cellpadding="0" border="0"
+        align="center">
+        <tbody>
+        {% for item in event.Items %}
+        {% catalog item.SKU %}
+        
+        <tr>
+        <td
+        style="direction:ltr;font-size:0px;padding:0px 0;text-align:center;">
+        
+        <div>
+        
+        <div style="display:table;table-layout:fixed;width:100%;"
+        class="kl-row colstack">
+        <!--[if (gte mso 9)|(IE)]>
+        <table width="600" style="width:600px;" align="center" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+        <td width="300" style="width:300px;">
+        <![endif]-->
+        <div style="display:table-cell;vertical-align:middle;width:50%;"
+        class="kl-column">
+        <div style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;"
+        class="mj-column-per-100 mj-outlook-group-fix component-wrapper">
+        <table width="100%" style="width:100%;"
+        role="presentation" cellspacing="0"
+        cellpadding="0" border="0">
+        <tbody>
+        <tr>
+        <td style="vertical-align:top;">
+        <table width="100%"
+        role="presentation"
+        cellspacing="0"
+        cellpadding="0" border="0">
+        <tbody>
+        <tr>
+        <td style="padding:10px;text-align: center; font-size:0; line-height: 1px;">
+        <div>
+        <center>
+        <a href="https://www.oakandluna.com/{{ item.ProductURL }}"
+        style="color:#000; text-decoration: none; display: inline-block;"
+        rel="noopener"
+        target="_blank">
+        <img width="200"
+        style="width:200px;line-height:20px;font-size:14px;"
+        src="{{ catalog_item.featured_image.full.src }}"
+        height="auto"
+        class="full">
+        </a>
+        </center>
+        </div>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        <td width="300" style="">
+        <![endif]-->
+        <div style="display:table-cell;vertical-align:middle;width:50%;"
+        class="kl-column">
+        <div style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;"
+        class="mj-column-per-100 mj-outlook-group-fix component-wrapper">
+        <table width="100%" style="width:100%;"
+        role="presentation" cellspacing="0"
+        cellpadding="0" border="0">
+        <tbody>
+        <tr>
+        <td style="vertical-align:top;">
+        <table width="100%"
+        role="presentation"
+        cellspacing="0"
+        cellpadding="0" border="0">
+        <tbody>
+        <tr>
+        <td class="pt10" style="color:#222427;font-family:'Helvetica Neue',Arial;padding: 20px 26px 20px 26px">
+        <div>
+        <p style="vertical-align:middle; text-align:left;font-size: 20px;line-height:26px;"
+        class="aligncentermob fs16">
+        
+        <a href="https://www.oakandluna.com/{{ item.ProductURL }}"
+        style="color:rgb(0, 0, 0); text-decoration:none; font-family: gill-sans-nova, Helvetica, Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight:500; font-style:normal;"
+        target="_blank"
+        rel="noopener">
+        {{ item.ProductName }}
+        </a>
+        
+        </p>
+        </div>
+        <div>
+        <p style="vertical-align:middle; text-align:left;font-size: 18px;line-height:34px;"
+        class="aligncentermob fs16">
+        
+        <a href="https://www.oakandluna.com/{{ item.ProductURL }}"
+        style="color:rgb(0, 0, 0); text-decoration:none; font-family: gill-sans-nova, Helvetica, Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight:600; font-style:normal"
+        target="_blank"
+        rel="noopener">
+        <span
+        style="color:#808080; text-decoration:line-through;font-weight: 400;">
+        {% if item.ItemCrossedPrice > 0 %}
+        {% if event.Currency == "USD" %}USD${% elif event.Currency == "CAD" %}CA${% elif event.Currency == "EUR" %}€{% elif event.Currency == "GBP" %}£{% elif event.Currency == "AUD" %}A${% elif event.Currency == "NOK" %}NOK{% elif event.Currency == "HKD" %}HK${% elif event.Currency == "SGD" %}SGD{% else %}{% endif %}{{ item.ItemCrossedPrice }}
+        {% endif %}</span>{% if item.ItemCrossedPrice > 0 %}&nbsp;&nbsp;{% endif %}
+        {% if event.Currency == "USD" %}USD${% elif event.Currency == "CAD" %}CA${% elif event.Currency == "EUR" %}€{% elif event.Currency == "GBP" %}£{% elif event.Currency == "AUD" %}A${% elif event.Currency == "NOK" %}NOK{% elif event.Currency == "HKD" %}HK${% elif event.Currency == "SGD" %}SGD{% else %}{% endif %}{{ item.ItemPrice }}
+        
+        
+        </a>
+        
+        </p>
+        </div>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+        
+        </div>
+        
+        </div>
+        
+        </td>
+        </tr>
+        
+        {% endcatalog %}
+        {% endfor %}
+        </tbody>
+        </table>
+        </div>
+        
+        </td>
+        </tr>
+        <tr>
+        <td height="20"
+        style="font-size:20px;line-height:20px;mso-line-height-rule:exactly;opacity:0;">
+        &nbsp;</td>
+        </tr>
+        <tr>
+        <td style="vertical-align:top;padding-top:9px;padding-right:18px;padding-bottom:9px;padding-left:18px;" class="mob-no-spc">
+        <table width="100%" style="" role="presentation" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+        <tr>
+        <td style="font-size:0px;padding:0px;word-break:break-word;" class="kl-button" align="center">
+        <table style="border-collapse:separate;line-height:100%;" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+        <tr>
+        <td valign="middle" style="border:none;border-radius:5px;cursor:auto;font-style:normal;mso-padding-alt:16px 40px 16px 40px;background:#000000;" role="presentation" bgcolor="#000000" align="center">
+        <a href="https://www.oakandluna.com/ShoppingCart.aspx?ccmid=&amp;cartid=666852375fff44039cb2870bf8e0cbae&amp;utm_content=prodimg&amp;_kx=" style="color:#FFF; text-decoration:none; display:inline-block; background:#000; font-family:'gill-sans-nova', Helvetica, Arial, sans-serif; font-size:16px; font-style:normal; font-weight:500; line-height:100%; letter-spacing:2px; margin:0; text-transform:none; padding:16px 40px 16px 40px; mso-padding-alt:0; border-radius:5px" target="_blank" rel="noopener">
+        CONTINUE SHOPPING
+        </a>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </td>
+        </tr>
+        <tr>
+        <td height="44"
+        style="font-size:44px;line-height:44px;mso-line-height-rule:exactly;opacity:0;">
+        &nbsp;</td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        
+        </td>
+        </tr>
+        </tbody>
+        </table>
