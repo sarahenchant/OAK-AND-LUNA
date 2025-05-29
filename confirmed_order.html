@@ -1,0 +1,576 @@
+<!--[if !mso 9]>
+<!-->
+
+
+    <style type="text/css">
+        @media screen and (max-width:550px) {
+        
+        .fs10 {
+        font-size: 10px !important;
+        line-height: 14px !important;
+        }
+        
+        .fs12 {
+        font-size: 12px !important;
+        line-height: 16px !important;
+        }
+        
+        .fs16 {
+        font-size: 16px !important;
+        line-height: 22px !important;
+        }
+        
+        .fs16b {
+        font-size: 16px !important;
+        line-height: 28px !important;
+        }
+        
+        .fs20 {
+        font-size: 20px !important;
+        line-height: 32px !important;
+        }
+        
+        .full {
+        width: 100% !important;
+        max-width: none !important;
+        }
+        
+        .aligncentermob {
+        text-align: center !important;
+        }
+        
+        .pt10 {
+        padding-top: 10px !important;
+        }
+        
+        .hide414 {
+        display: none !important;
+        }
+        }
+        
+        
+        </style>
+        
+        <!--<![endif]-->
+        
+        
+        
+        <table style="width:100%;" role="presentation" class="kl-section" cellspacing="0" cellpadding="0" border="0" align="center">
+        <tbody>
+        <tr>
+        <td>
+        
+        <div style="margin:0px auto;max-width:600px;">
+        <table style="width:100%;" role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+        <tbody>
+        <tr>
+        <td height="40" style="font-size:40px;line-height:40px;mso-line-height-rule:exactly;opacity:0;">
+         </td>
+        </tr>
+        <tr>
+        <td style="vertical-align:top;padding-right:18px;padding-bottom:4px;padding-left:18px;" class="mob-no-spc">
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+        <tr>
+        <td style="font-size:0px;padding:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word;" class="kl-text" align="center">
+        <div style="font-family:'Helvetica Neue',Arial;font-size:14px;font-style:normal;font-weight:400;letter-spacing:0px;line-height:1.3;text-align:center;color:#222427;">
+        <div style="text-align: center;"><span style="font-family: Bebas-Neue-Klaviyo-Hosted, Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 44px;line-height: 52px;">
+        ORDER SUMMARY</span></div>
+        </div>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </td>
+        </tr>
+        
+        <tr>
+        <td style="vertical-align:top;padding-top:10px;padding-right:18px;padding-bottom:40px;padding-left:18px;" class="mob-no-spc">
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+        <tr>
+        <td style="font-size:0px;padding:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word;" class="kl-text" align="center">
+        <div class="fs16" style="font-family: gill-sans-nova,'Helvetica Neue',Arial;font-size:20px;font-style:normal;font-weight:500;letter-spacing:0px;line-height:1.3;text-align:center;color:#222427;">
+        <div style="text-align: center;"><span style="font-size: 20px; font-family: gill-sans-nova, Helvetica, Arial, sans-serif; font-weight: 500; font-style: normal; color: rgb(0, 0, 0);" class="fs16">
+        Order Number #{{ event.OrderId }}</span></div>
+        </div>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </td>
+        </tr>
+        
+        
+        
+        
+        <tr>
+        <td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
+        
+        <div style="margin:0px auto;max-width:600px;">
+        <table style="width:100%;" role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+        <tbody>
+        {% for item in event.Items %}
+        {% catalog item.Sku %}
+        
+        <tr>
+        <td style="direction:ltr;font-size:0px;padding:0px 0;text-align:center;">
+        
+        <div>
+        
+        <div style="display:table;table-layout:fixed;width:100%;" class="kl-row colstack">
+        <!--[if (gte mso 9)|(IE)]>
+        <table width="600" style="width:600px;" align="center" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+        <td width="300" style="width:300px;">
+        <![endif]-->
+        <div style="display:table-cell;vertical-align:middle;width:50%;" class="kl-column">
+        <div style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;" class="mj-column-per-100 mj-outlook-group-fix component-wrapper">
+        <table width="100%" style="width:100%;" role="presentation" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+        <tr>
+        <td style="vertical-align:top;">
+        <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+        <tr>
+        <td style="padding:10px;text-align: right; font-size:0; line-height: 1px;">
+        <div>
+        
+        <a href="{{ item.ProductUrl }}" style="color:#000; text-decoration: none; display: inline-block;" rel="noopener" target="_blank">
+        <img width="220" style="width:220px;line-height:20px;font-size:14px;" src="{{ catalog_item.featured_image.full.src }}" height="auto" class="full">
+        </a>
+        
+        </div>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        <td width="300" style="width:300px;">
+        <![endif]-->
+        <div style="display:table-cell;vertical-align:middle;width:50%;" class="kl-column">
+        <div style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;" class="mj-column-per-100 mj-outlook-group-fix component-wrapper">
+        <table width="100%" style="width:100%;" role="presentation" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+        <tr>
+        <td style="vertical-align:top;padding-right:30px;" class="mob-no-spc">
+        <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+        <tr>
+        <td class="pt10" style="color:#222427;font-family:'Helvetica Neue',Arial;padding: 20px 36px 20px 36px">
+        <div>
+        <p style="vertical-align:middle; text-align:left;font-size: 20px;line-height:26px;" class="aligncentermob fs16">
+        
+        <a href="{{ item.ProductUrl }}" style="color:rgb(0, 0, 0); text-decoration:none; font-family: gill-sans-nova, Helvetica, Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight:500; font-style:normal;" target="_blank" rel="noopener">
+        {{ item.ProductName }}
+        </a>
+        
+        </p>
+        </div>
+        <div>
+        <p style="vertical-align:middle; text-align:left;font-size: 18px;line-height:34px;" class="aligncentermob fs16">
+        
+        <a href="{{ item.ProductUrl }}" style="color:rgb(0, 0, 0); text-decoration:none; font-family: gill-sans-nova, Helvetica, Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight:600; font-style:normal" target="_blank" rel="noopener">
+        <span style="color:#808080; text-decoration:line-through;font-weight: 400;">
+        {% if item.ItemCrossedPrice > 0 %}
+        {% if event.CurrencyCode == "USD" %}${% elif event.CurrencyCode == "CAD" %}CA${% elif event.CurrencyCode == "EUR" %}€{% elif event.CurrencyCode == "GBP" %}£{% elif event.CurrencyCode == "AUD" %}A${% elif event.CurrencyCode == "NOK" %}NOK{% elif event.CurrencyCode == "HKD" %}HK${% elif event.CurrencyCode == "SGD" %}SGD{% else %}{% endif %}{{ item.ItemCrossedPrice|floatformat:2 }}
+        {% endif %}</span>{% if item.ItemCrossedPrice > 0 %}  {% endif %}
+        {% if event.CurrencyCode == "USD" %}${% elif event.CurrencyCode == "CAD" %}CA${% elif event.CurrencyCode == "EUR" %}€{% elif event.CurrencyCode == "GBP" %}£{% elif event.CurrencyCode == "AUD" %}A${% elif event.CurrencyCode == "NOK" %}NOK{% elif event.CurrencyCode == "HKD" %}HK${% elif event.CurrencyCode == "SGD" %}SGD{% else %}{% endif %}{{ item.Price|floatformat:2 }}
+        
+        
+        </a>
+        
+        </p>
+        </div>
+        
+        <div>
+        <p style="vertical-align:middle; text-align:left;font-size: 14px;line-height:40px;" class="aligncentermob">
+        
+        <a href="https://www.oakandluna.com/CustomerSupport.aspx?utm_source=Confirmation&amp;utm_medium=Email&amp;utm_content=changeitems&amp;utm_campaign=OAL_US_ALL_System_Email_Confirmation&amp;adid=2" style="color:rgb(0, 0, 0); text-decoration:none; font-family: gill-sans-nova, Helvetica, Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight:bold; font-style:normal" target="_blank" rel="noopener">
+        
+        MAKE
+        CHANGES  ▸
+        </a>
+        
+        </p>
+        </div>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+        
+        </div>
+        
+        </div>
+        
+        </td>
+        </tr>
+        
+        {% endcatalog %}
+        {% endfor %}
+        </tbody>
+        </table>
+        </div>
+        
+        </td>
+        </tr>
+        
+        
+        <tr>
+        <td height="40" class="hide414" style="font-size:40px;line-height:40px;mso-line-height-rule:exactly;opacity:0;">
+         </td>
+        </tr>
+        
+        
+        
+        
+        <tr>
+        <td style="vertical-align:top;padding: 10px 10px 0px 10px;">
+        <table width="100%" style="max-width:600px;" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+        <tr>
+        <td style="padding: 0px 52px 0px 52px; font-size:0px;word-break:break-word;border-radius:4px;" align="center" class="mob-no-spc">
+        <!--[if (gte mso 9)|(IE)]>
+        <table width="460" style="width:460px;" align="center" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+        <td width="460" style="width:460px;">
+        <![endif]-->
+        <table width="100%" style="background-color:#F7F7F7;border-radius:4px; border:1px solid #000000;border-collapse: separate; font-family: gill-sans-nova, Helvetica, Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:13px;line-height:22px;table-layout:fixed;width:100%;" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+        <tr>
+        <td style="width:60%;overflow:hidden;vertical-align:top;padding-top:20px;padding-left:26px;">
+        <p style="font-weight:bold; vertical-align:middle; text-align:left;font-size: 18px;line-height:28px;font-family: Bebas-Neue-Klaviyo-Hosted, Arial, 'Helvetica Neue', Helvetica, sans-serif;">
+        SUBTOTAL
+        </p>
+        </td>
+        <td style="width:40%;overflow:hidden;vertical-align:top;padding-top:20px;padding-right:26px;">
+        <p style="font-weight:bold; vertical-align:middle; text-align:right;font-size: 18px;line-height:28px;font-family: Bebas-Neue-Klaviyo-Hosted, Arial, 'Helvetica Neue', Helvetica, sans-serif;">
+        {% if event.CurrencyCode == "USD" %}${% elif event.CurrencyCode == "CAD" %}CA${% elif event.CurrencyCode == "EUR" %}€{% elif event.CurrencyCode == "GBP" %}£{% elif event.CurrencyCode == "AUD" %}A${% elif event.CurrencyCode == "NOK" %}NOK{% elif event.CurrencyCode == "HKD" %}HK${% elif event.CurrencyCode == "SGD" %}SGD{% else %}{% endif %}{{ event.SubTotal|floatformat:2 }}
+        </p>
+        </td>
+        </tr>
+        <tr>
+        <td style="width:60%;overflow:hidden;vertical-align:top;padding-top:8px;padding-right:26px;padding-bottom:0px;padding-left:26px;">
+        <p style="vertical-align:middle; text-align:left;font-size: 16px;line-height:24px;font-family: gill-sans-nova, Helvetica, Arial, sans-serif;">
+        Discount
+        </p>
+        </td>
+        <td style="width:40%;overflow:hidden;vertical-align:top;padding-top:8px;padding-right:26px;padding-bottom:0px;padding-left:26px;">
+        <p style="vertical-align:middle; text-align:right;font-size: 16px;line-height:24px;font-family: gill-sans-nova, Helvetica, Arial, sans-serif;">
+        -
+        {% if event.DiscountValue %}{% if event.CurrencyCode == "USD" %}${% elif event.CurrencyCode == "CAD" %}CA${% elif event.CurrencyCode == "EUR" %}€{% elif event.CurrencyCode == "GBP" %}£{% elif event.CurrencyCode == "AUD" %}A${% elif event.CurrencyCode == "NOK" %}NOK{% elif event.CurrencyCode == "HKD" %}HK${% elif event.CurrencyCode == "SGD" %}SGD{% else %}{% endif %}{{ event.DiscountValue|floatformat:2 }}{% else %}{% if event.CurrencyCode == "USD" %}${% elif event.CurrencyCode == "CAD" %}CA${% elif event.CurrencyCode == "EUR" %}€{% elif event.CurrencyCode == "GBP" %}£{% elif event.CurrencyCode == "AUD" %}A${% elif event.CurrencyCode == "NOK" %}NOK{% elif event.CurrencyCode == "HKD" %}HK${% elif event.CurrencyCode == "SGD" %}SGD{% else %}{% endif %}0.00{% endif %}
+        </p>
+        </td>
+        </tr>
+        <tr>
+        <td style="width:60%;overflow:hidden;vertical-align:top;padding-top:8px;padding-right:26px;padding-bottom:0px;padding-left:26px;">
+        <p style="vertical-align:middle; text-align:left;font-size: 16px;line-height:24px;font-family: gill-sans-nova, Helvetica, Arial, sans-serif;">
+        Shipping
+        </p>
+        </td>
+        <td style="width:40%;overflow:hidden;vertical-align:top;padding-top:8px;padding-right:26px;padding-bottom:0px;padding-left:26px;">
+        <p style="vertical-align:middle; text-align:right;font-size: 16px;line-height:24px;font-family: gill-sans-nova, Helvetica, Arial, sans-serif;">
+        {% if event.ShippingCost %}{% if event.CurrencyCode == "USD" %}${% elif event.CurrencyCode == "CAD" %}CA${% elif event.CurrencyCode == "EUR" %}€{% elif event.CurrencyCode == "GBP" %}£{% elif event.CurrencyCode == "AUD" %}A${% elif event.CurrencyCode == "NOK" %}NOK{% elif event.CurrencyCode == "HKD" %}HK${% elif event.CurrencyCode == "SGD" %}SGD{% else %}{% endif %}{{ event.ShippingCost|floatformat:2 }}{% else %}FREE{% endif %}
+        </p>
+        </td>
+        </tr>
+        <tr>
+        <td style="width:60%;overflow:hidden;vertical-align:top;padding-top:8px;padding-right:26px;padding-bottom:0px;padding-left:26px;">
+        <p style="vertical-align:middle; text-align:left;font-size: 16px;line-height:24px;font-family: gill-sans-nova, Helvetica, Arial, sans-serif;">
+        Taxes
+        </p>
+        </td>
+        <td style="width:40%;overflow:hidden;vertical-align:top;padding-top:8px;padding-right:26px;padding-bottom:0px;padding-left:26px;">
+        <p style="vertical-align:middle; text-align:right;font-size: 16px;line-height:24px;font-family: gill-sans-nova, Helvetica, Arial, sans-serif;">
+        {% if event.Tax %}{% if event.CurrencyCode == "USD" %}${% elif event.CurrencyCode == "CAD" %}CA${% elif event.CurrencyCode == "EUR" %}€{% elif event.CurrencyCode == "GBP" %}£{% elif event.CurrencyCode == "AUD" %}A${% elif event.CurrencyCode == "NOK" %}NOK{% elif event.CurrencyCode == "HKD" %}HK${% elif event.CurrencyCode == "SGD" %}SGD{% else %}{% endif %}{{ event.Tax|floatformat:2 }}{% else %}{% if event.CurrencyCode == "USD" %}${% elif event.CurrencyCode == "CAD" %}CA${% elif event.CurrencyCode == "EUR" %}€{% elif event.CurrencyCode == "GBP" %}£{% elif event.CurrencyCode == "AUD" %}A${% elif event.CurrencyCode == "NOK" %}NOK{% elif event.CurrencyCode == "HKD" %}HK${% elif event.CurrencyCode == "SGD" %}SGD{% else %}{% endif %}0.00{% endif %}
+        </p>
+        </td>
+        </tr>
+        <tr>
+        <td style="width:60%;overflow:hidden;vertical-align:top;padding-top:10px;padding-bottom:20px;padding-left:26px;">
+        <p style="font-weight:bold; vertical-align:middle; text-align:left;font-size: 18px;line-height:28px;font-family: Bebas-Neue-Klaviyo-Hosted, Arial, 'Helvetica Neue', Helvetica, sans-serif;">
+        ORDER TOTAL :
+        </p>
+        </td>
+        <td style="width:40%;overflow:hidden;vertical-align:top;padding-top:10px;padding-bottom:20px;padding-right:26px;">
+        <p style="font-weight:bold; vertical-align:middle; text-align:right;font-size: 18px;line-height:28px;font-family: Bebas-Neue-Klaviyo-Hosted, Arial, 'Helvetica Neue', Helvetica, sans-serif;">
+        {% if event.CurrencyCode == "USD" %}${% elif event.CurrencyCode == "CAD" %}CA${% elif event.CurrencyCode == "EUR" %}€{% elif event.CurrencyCode == "GBP" %}£{% elif event.CurrencyCode == "AUD" %}A${% elif event.CurrencyCode == "NOK" %}NOK{% elif event.CurrencyCode == "HKD" %}HK${% elif event.CurrencyCode == "SGD" %}SGD{% else %}{% endif %}{{ event|lookup:'$value'|floatformat:2 }}
+        </p>
+        </td>
+        </tr>
+        
+        
+        </tbody>
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <tr>
+        <td height="30" style="font-size:30px;line-height:30px;mso-line-height-rule:exactly;opacity:0;">
+         </td>
+        </tr>
+        
+        
+        
+        
+        
+        <tr>
+        <td style="vertical-align:top;padding: 0px 10px 0px 10px;">
+        <table width="100%" style="max-width:600px;" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+        <tr>
+        <td style="padding: 0px 52px 0px 52px; font-size:0px;word-break:break-word;border-radius:4px;" align="center" class="mob-no-spc">
+        <!--[if (gte mso 9)|(IE)]>
+        <table width="460" style="width:460px;" align="center" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+        <td width="460" style="width:460px;">
+        <![endif]-->
+        <table width="100%" style="font-family: gill-sans-nova, Helvetica, Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:13px;line-height:22px;table-layout:fixed;width:100%;" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+        <tr>
+        <td style="width:48%;overflow:hidden;vertical-align:top;padding-top:20px;padding-bottom:60px;border-bottom:2px solid #eae8e8;">
+        <p style="font-weight: bold; vertical-align:middle; text-align:left;font-size: 18px;line-height:28px;font-family: Bebas-Neue-Klaviyo-Hosted, Arial, 'Helvetica Neue', Helvetica, sans-serif;">
+        ORDERED ON:<br>
+        <span style="font-weight: normal;vertical-align:middle; text-align:left;font-size: 16px;line-height:24px;font-family: gill-sans-nova, Helvetica, Arial, sans-serif;">
+        {{ event.PaymentDate|default:'' }}
+        </span>
+        </p>
+        </td>
+        <td style="width:4%;overflow:hidden;vertical-align:top;padding-top:4px;padding-bottom:0px;">
+        <p style="vertical-align:middle; text-align:left;font-size: 16px;line-height:20px;font-family: gill-sans-nova, Helvetica, Arial, sans-serif;">
+         
+        </p>
+        </td>
+        <td style="width:48%;overflow:hidden;vertical-align:top;padding-top:20px;padding-bottom:60px;border-bottom:2px solid #eae8e8;">
+        <p style="font-weight: bold; vertical-align:middle; text-align:left;font-size: 18px;line-height:28px;font-family: Bebas-Neue-Klaviyo-Hosted, Arial, 'Helvetica Neue', Helvetica, sans-serif;">
+        ESTIMATED DELLIVERY:<br>
+        <span style="font-weight: normal;vertical-align:middle; text-align:left;font-size: 16px;line-height:24px;font-family: gill-sans-nova, Helvetica, Arial, sans-serif;">
+        {{ event.Eta|default:'' }}
+        </span>
+        </p>
+        </td>
+        </tr>
+        
+        
+        
+        
+        </tbody>
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        <tr>
+        <td height="30" style="font-size:30px;line-height:30px;mso-line-height-rule:exactly;opacity:0;">
+        &nbsp;</td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        <tr>
+        <td style="direction:ltr;font-size:0px;padding:0px 10px;text-align:center;">
+        
+        <div style="margin:0px auto;">
+        <table style="width:100%;" role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+        <tbody>
+        <tr>
+        <td style="direction:ltr;font-size:0px;padding:0px 52px;text-align:center;" class="mob-no-spc">
+        
+        <div>
+        
+        <div style="display:table;table-layout:fixed;width:100%;max-width:460px;" class="kl-row colstack">
+        <!--[if (gte mso 9)|(IE)]>
+        <table width="460" style="width:460px;" align="center" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+        <td width="240" style="width:240px;">
+        <![endif]-->
+        <div style="display:table-cell;vertical-align:top;width:58%;" class="kl-column">
+        <div style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;" class="mj-column-per-100 mj-outlook-group-fix component-wrapper">
+        <table width="100%" style="width:100%;" role="presentation" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+        <tr>
+        <td style="vertical-align:top;padding-right:20px;">
+        <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+        <tr>
+        <td style="font-weight: bold; vertical-align:top;">
+        <p style="font-weight: bold; vertical-align:top; text-align:left;font-size: 18px;line-height:28px;font-family: Bebas-Neue-Klaviyo-Hosted, Arial, 'Helvetica Neue', Helvetica, sans-serif;">
+        SHIPPING TO:
+        </p>
+        </td>
+        </tr>
+        <tr>
+        <td style="overflow:hidden;vertical-align:top;padding-top:4px;">
+        <p style="vertical-align:top; text-align:left;font-size: 16px;line-height:20px;font-family: gill-sans-nova, Helvetica, Arial, sans-serif;">
+        {{ event.ShippingAddress.FirstName }} {% if event.ShippingAddress.FirstName %}{{ event.ShippingAddress.LastName }}<br>
+        {% else %}
+        {% endif %}
+        {% if event.ShippingAddress.Address1 %}
+        {{ event.ShippingAddress.Address1 }}{% else %}{% endif %}
+        {{ event.ShippingAddress.Address2 }}
+        {% if event.ShippingAddress.City %}{{ event.ShippingAddress.City }},{% else %}{% endif %} {% if event.ShippingAddress.Zip %}{{ event.ShippingAddress.Zip }}{% else %}{% endif %}
+        {% if event.ShippingAddress.Region %}{{ event.ShippingAddress.Region }},{% else %}{% endif %} <br>{{ event.ShippingAddress.Country }}
+        
+        </p>
+        </td>
+        </tr>
+        <tr>
+        <td style="overflow:hidden;vertical-align:top;padding-top:10px;padding-bottom:30px;">
+        
+        <span style="vertical-align:top; text-align:left;font-size: 14px;line-height:16px;" class="aligncentermob">
+        
+        <a href="https://www.oakandluna.com/CustomerSupport.aspx?utm_source=Confirmation&amp;utm_medium=Email&amp;utm_content=changeitems&amp;utm_campaign=OAL_US_ALL_System_Email_Confirmation&amp;adid=2" style="color:rgb(0, 0, 0); text-decoration:none; font-family: gill-sans-nova, Helvetica, Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight:bold; font-style:normal" target="_blank" rel="noopener">
+        
+        UPDATE
+        ADDRESS  ▸
+        </a>
+        
+        </span>
+        
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        <td width="220" style="width:220px;">
+        <![endif]-->
+        <div style="display:table-cell;vertical-align:top;width:48%;" class="kl-column">
+        <div style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;" class="mj-column-per-100 mj-outlook-group-fix component-wrapper">
+        <table width="100%" style="width:100%;" role="presentation" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+        <tr>
+        <td style="vertical-align:top;padding-right:30px;" class="mob-no-spc">
+        <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+        <tr>
+        <td style="font-weight: bold; vertical-align:top;">
+        <p style="font-weight: bold; vertical-align:top; text-align:left;font-size: 18px;line-height:28px;font-family: Bebas-Neue-Klaviyo-Hosted, Arial, 'Helvetica Neue', Helvetica, sans-serif;">
+        SHIPPING METHOD:
+        </p>
+        </td>
+        </tr>
+        <tr>
+        <td style="overflow:hidden;vertical-align:top;padding-top:4px;">
+        <p style="vertical-align:top; text-align:left;font-size: 16px;line-height:20px;font-family: gill-sans-nova, Helvetica, Arial, sans-serif;">
+        {{ event.ShippingType|default:'' }}<br>{{ event.ShippingDescription|default:'' }}
+        
+        </p>
+        </td>
+        </tr>
+        <tr>
+        <td style="overflow:hidden;vertical-align:top;padding-top:10px;padding-bottom:30px;">
+        
+        <span style="vertical-align:top; text-align:left;font-size: 14px;line-height:16px;" class="aligncentermob">
+        
+        <a href="https://www.oakandluna.com/CustomerSupport.aspx?utm_source=Confirmation&amp;utm_medium=Email&amp;utm_content=changeitems&amp;utm_campaign=OAL_US_ALL_System_Email_Confirmation&amp;adid=2" style="color:rgb(0, 0, 0); text-decoration:none; font-family: gill-sans-nova, Helvetica, Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight:bold; font-style:normal" target="_blank" rel="noopener">
+        
+        UPDATE
+        SHIPPING  ▸
+        </a>
+        
+        </span>
+        
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+        
+        </div>
+        
+        </div>
+        
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </td>
+        </tr>
+  
+        
+        
+        </tbody>
+        </table>
+        </div>
+        
+        </td>
+        </tr>
+        </tbody>
+        </table>
